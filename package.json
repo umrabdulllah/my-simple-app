@@ -1,0 +1,14 @@
+{
+  "name": "my-simple-app",
+  "version": "1.0.0",
+  "description": "A super simple Node.js + MongoDB app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.10.0",
+    "body-parser": "^1.20.2"
+  }
+}

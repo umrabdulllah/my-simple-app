@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .todo-container {
+            margin-top: 20px;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .todo-text {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .todo-form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #new-task {
+            flex-grow: 1;
+            padding: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .delete-btn {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    
+    <div class="todo-form">
+        <input type="text" id="new-task" placeholder="Add a new task...">
+        <button id="add-task">Add</button>
+    </div>
+    
+    <div id="todo-list" class="todo-container">
+        <!-- Tasks will be added here dynamically -->
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
